@@ -1,0 +1,55 @@
+Project Overview
+This project focuses on predicting customer churn in a telecom company using machine learning techniques. The goal is to identify customers who are likely to leave the service and understand the key factors influencing churn.
+
+Technologies Used:
+Python
+Pandas, NumPy
+scikit-learn
+Matplotlib, Seaborn
+
+Dataset
+The dataset contains customer information such as:
+demographic data
+account information
+services used
+billing details
+
+Target variable:
+Churn (Yes/No)
+
+Project Steps
+1. Data Cleaning & Preprocessing
+Handled missing values
+Encoded categorical variables
+Scaled numerical features
+
+2. Exploratory Data Analysis (EDA)
+Analyzed customer behavior patterns
+Identified correlations between features and churn
+Visualized key distributions and relationships
+
+3. Model Building
+The following models were implemented and compared:
+Logistic Regression
+Random Forest
+Gradient Boosting
+
+4. Model Evaluation
+Models were evaluated using:
+Accuracy
+Precision / Recall / F1-score
+
+📈 Results
+Best model: XGBoost
+Recall: 74%
+
+
+Key Insights:
+Customers with month-to-month contracts are more likely to churn
+Higher monthly charges increase churn probability
+Long-term customers are less likely to leave
+
+Future Improvements
+Hyperparameter tuning
+Deployment using API (e.g. FastAPI)
+Building an interactive dashboard
