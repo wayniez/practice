@@ -1,0 +1,57 @@
+Overview
+This project builds an end-to-end machine learning pipeline to predict salaries based on job-related features. It handles numerical and categorical data, performs preprocessing, exploratory data analysis (EDA), and compares multiple regression models, including Linear Regression, Random Forest, Gradient Boosting, and XGBoost.
+The pipeline is ready for deployment and can easily be integrated with web apps (e.g., Streamlit).
+
+Technologies Used
+Python 3
+Pandas, NumPy
+scikit-learn
+XGBoost
+Matplotlib, Seaborn
+Joblib (model saving)
+
+Dataset
+CSV dataset with the following features:
+Job Title (categorical)
+Education (categorical)
+Age (numerical)
+YearsExperience (numerical)
+Salary (target)
+Dataset must be cleaned of missing target values (Salary) for training.
+
+Project Steps
+1.Exploratory Data Analysis (EDA)
+Visualized salary distribution
+Examined correlations between numeric features (Age, YearsExperience) and Salary
+Analyzed Salary vs Education and top 10 Job Titles using boxplots
+
+2.Preprocessing
+Filled missing numeric values with median
+Filled missing categorical values with "Unknown"
+Encoded categorical variables using OneHotEncoder
+Scaled numerical features using StandardScaler
+
+3.Pipeline & Model Training
+Combined preprocessing with model training using Pipeline
+Compared models:
+Linear Regression
+Random Forest Regressor
+Gradient Boosting Regressor
+XGBoost Regressor
+
+Evaluated models using:
+MAE (Mean Absolute Error)
+RMSE (Root Mean Squared Error)
+R² Score
+
+4.Feature Importance
+For tree-based models (Random Forest, Gradient Boosting, XGBoost), top features influencing salary were extracted to gain insights.
+
+📈 Results
+Model	               MAE	         RMSE	         R²
+Random Forest	       10138.000000  17511.208315  0.872103
+Gradient Boosting	   10459.307396  17569.844197  0.871246
+XGBoost	             10897.061471  18203.242803  0.861795
+Linear Regression	   11675.283655  18915.171410  0.850773
+
+The best performing model is automatically selected based on R² Score.
