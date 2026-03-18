@@ -39,7 +39,7 @@ Models were evaluated using:
 Accuracy
 Precision / Recall / F1-score
 
-📈 Results
+Results
 Best model: XGBoost
 Recall: 74%
 
