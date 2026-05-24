@@ -20,7 +20,7 @@ A collection of hands-on Jupyter Notebook exercises covering core machine learni
 
 - **Python** — primary language
 - **Jupyter Notebook** — interactive environment
-- **scikit-learn** — ML algorithms
+- **scikit-learn / PyTorch** — ML algorithms
 - **pandas / NumPy** — data manipulation
 - **Matplotlib / Seaborn** — visualization
 
