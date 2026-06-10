@@ -1,0 +1,6 @@
+venv/
+.ipynb_checkpoints/
+data/
+model_params/
+STL10_Model.py
+
